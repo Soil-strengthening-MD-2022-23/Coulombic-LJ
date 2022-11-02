@@ -3,8 +3,8 @@
 
 main(){
   FILE *in,*out;
-  in=fopen("gt_q3.txt","r");
-  out=fopen("Gt_Average_q3.txt","w");
+  in=fopen("q2_aggregate.txt","r");
+  out=fopen("q2_Gt_avg.txt","w");
   float gt[4001][5];
   float sum[5],buff[4001];
   int i,j;
