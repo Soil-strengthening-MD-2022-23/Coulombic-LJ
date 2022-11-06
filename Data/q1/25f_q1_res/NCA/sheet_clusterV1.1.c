@@ -216,16 +216,16 @@ void vmdcluster(int parentcase,int groupid, struct particle *p,FILE *parentVMD1,
 	
 	switch(thiscase)
 	  {
-	  case 1:type="H";break;
-	  case 2:type="O";break;
-	  case 3:type="N";break;
-	  case 4:type="C";break;
-	  case 5:type="S";break;
-	  case 6:type="P";break;
-	  case 7:type="Z";break;
-	  case 8:type="LPA";break;
-	  case 9:type="L";break;
-	  case 10:printf("WARNING, color method\n");break;
+    case 1:type="H";break;
+    case 2:type="O";break;
+    case 3:type="N";break;
+    case 4:type="C";break;
+    case 5:type="S";break;
+    case 6:type="P";break;
+    case 7:type="Z";break;
+    case 8:type="LPA";break;
+    case 9:type="L";break;
+    case 10:printf("WARNING, color method\n");break;
 	  }
 	if(p[i].type == TYPESHEET)
 	  fprintf(parentVMD2,"%s %lf %lf %lf\n",type,p[i].cord[0],p[i].cord[1],p[i].cord[2]);      
@@ -292,7 +292,7 @@ main()
   printf("The group CUTOFF judge is set as %lf \n",CUTOFF);
   printf("CHECK WHERE ATTRACTION START AND STOP\n");
   printf("CURRENTLY START AT %d STOP AT %d\n",CLUSTERSTART*DUMPSPAN,CLUSTERSTOP*DUMPSPAN);
-  getchar();
+    getchar();
 
   FILE *datafiller,*datachain,*writedata;
   datafiller = fopen("filler_after.lammpstrj","r");
