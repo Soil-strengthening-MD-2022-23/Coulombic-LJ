@@ -42,7 +42,7 @@
 2. Run `Gt.c` setting temperature to be `0.8` and the volume to be the value from `log.lammps`.
 3. Combine the `str_cor_long.txt` data for all four filler concentrations into one file `qX_aggregate.txt` for the specified charge `X`.
 4. Set the file `in` to `qX_aggregate.txt` and `out` to `qX_Gt_avg.txt` in `Average_Gt.c`.
-5. Run `Average_Gt.c` and plot the resulting data on a logarithmic time scale. (Remember to delete the last line of `gX_Gt_avg.txt`.)
+5. Run `Average_Gt.c` and plot the resulting data on a logarithmic time scale. (Remember to delete the last line of `qX_Gt_avg.txt`.)
 
 ### Step Strain Test (SST)
 1. Move the file `stress.out` into the `SST` folder.
@@ -50,4 +50,4 @@
 3. Run `unzip_stress_files.ipynb`.
 4. Combine the `stressXf.txt` data for all four filler concentrations `X` into one file `qY_stress.txt` for the specified charge `Y`.
 5. Set the file `in` to `qY_stress.txt` and `out` to `qY_St_avg.txt` in `AvgSt.c`.
-6. Run `AvgSt.c`.
+6. Run `AvgSt.c`. (Remember to delete the last line of `qY_St_avg.txt`.)
