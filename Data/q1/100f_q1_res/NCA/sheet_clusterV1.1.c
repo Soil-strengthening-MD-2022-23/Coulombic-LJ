@@ -25,8 +25,8 @@ const int TYPESTICKER=2;
 const int TYPESHEET=4;
 const double CUTOFF = 1.12;
 const int CLUSTERSTART = 0;//start calculating after reading 50 times,100,000*20=2,000,000
-const int CLUSTERSTOP = 120;
-const int DUMPSPAN = 50000;//dump span
+const int CLUSTERSTOP = 120; 
+const int DUMPSPAN = 50000;//dump span 
 
 void skipline(int l,FILE *f)
 {
