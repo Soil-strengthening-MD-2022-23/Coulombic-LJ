@@ -29,7 +29,8 @@
 ### Network Clustering Algorithm (NCA)
 1. Move the files `chains_after.lammpstrj` and `filler_after.lammpstrj` into the `NCA` folder.
 2. Set the `N_FILLER` variable in `sheet_clusterV1.1.c` to the according number of filler particles.
-3. Run `sheet_clusterV1.1.c`.
+3. Open terminal in the `NCA` folder and run the command `gcc sheet_clusterV1.1.c -o sheet_clusterV1.1 -lm`.
+4. Run the command `./sheet_clusterV1.1`.
 
 ### Radial Distribution Function (RDF)
 1. Move the five `tmp.....rdf` files into the `RDF` folder.
@@ -40,9 +41,8 @@
 1. Move the file `Sauto.DAT` into the `SAF` folder.
 2. Run `Gt.c` setting temperature to be `0.8` and the volume to be the value from `log.lammps`.
 3. Combine the `str_cor_long.txt` data for all four filler concentrations into one file `qX_aggregate.txt` for the specified charge `X`.
-4. Delete the last line of `qX_aggregate.txt`.
-5. Set the file `in` to `qX_aggregate.txt` and `out` to `qX_Gt_avg.txt` in `Average_Gt.c`.
-6. Run `Average_Gt.c` and plot the resulting data on a logarithmic time scale.
+4. Set the file `in` to `qX_aggregate.txt` and `out` to `qX_Gt_avg.txt` in `Average_Gt.c`.
+5. Run `Average_Gt.c` and plot the resulting data on a logarithmic time scale. (Remember to delete the last line of `gX_Gt_avg.txt`.)
 
 ### Step Strain Test (SST)
 1. Move the file `stress.out` into the `SST` folder.
