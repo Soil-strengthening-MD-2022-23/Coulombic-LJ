@@ -48,6 +48,6 @@
 1. Move the file `stress.out` into the `SST` folder.
 2. Set the absolute paths of the `stress.out` input files and `stressXf.txt` output files for all filler concentrations `X`.
 3. Run `unzip_stress_files.ipynb`.
-4. Combine the `stressXf.txt` data for all four filler concentrations `X` into one file `stress_qY.txt` for the specified charge `Y`.
+4. Combine the `stressXf.txt` data for all four filler concentrations `X` into one file `qY_stress.txt` for the specified charge `Y`.
 5. Set the file `in` to `qY_stress.txt` and `out` to `qY_St_avg.txt` in `AvgSt.c`.
 6. Run `AvgSt.c`.
