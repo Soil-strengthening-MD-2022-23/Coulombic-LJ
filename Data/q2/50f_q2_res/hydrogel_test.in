@@ -4,7 +4,8 @@ read_restart attract.restart
 
 pair_style hybrid/overlay lj/cut 2.5 coul/long 2.5
 pair_modify pair lj/cut shift yes
-pair_coeff * * lj/cut 1.0 1.0 2.5 
+pair_coeff * * lj/cut 1.0 1.0 2.5
+pair_coeff 2 4 lj/cut 5.0 1.0 2.5 
 pair_coeff 2*5 2 coul/long
 pair_coeff 2*5 3 coul/long
 pair_coeff 2*5 4 coul/long
